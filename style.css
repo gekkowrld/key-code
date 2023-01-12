@@ -1,12 +1,15 @@
 *{
     padding: 0;
     margin: 0;
-    /* border: 1px solid black; */
 }
 body{
     height: 100vh;
+    display: grid;
+    place-content: center;
 }
 header{
+    display: flex;
+    justify-content: space-around;
     width: 100vw;
     position: fixed;
     background-color: #0ff;
@@ -43,7 +46,7 @@ main p{
     border-radius: 12px;
 }
 .key-name{
-    width: 90px;
+    width: 95px;
     height: 45px;
     color: #0ff;
     background-color: rgba(0,0,0,0.7);
@@ -59,4 +62,21 @@ main p{
     background-color: #7fff7f;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+body.dark{
+    background-color: #555;
+}
 
+.mode.dark{
+    color: #aaf; 
+    background-color: #fff; 
+    border: #aab 2px solid
+}
+.mode{
+    cursor: pointer;
+    color: #faa;
+    border: 2px solid #daa;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #555;
+}
