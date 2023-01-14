@@ -39,6 +39,6 @@
 //         mode.innerText = 'Dark Mode'
 //     }
 // }
-
-const keys = Array.from(document.querySelectorAll('#keyboard li'))
-keys.forEach(key => key.addEventListener('click', keyPressed));
+const keys = document.querySelectorAll('#keyboard li');
+const letter = document.querySelectorAll('letter');
+console.log(letter.length);
