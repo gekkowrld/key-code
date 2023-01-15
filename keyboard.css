@@ -8,6 +8,21 @@
     --keyboard-container-color: #000;
     --special-text-color-background-color: #bba1d1;
 }
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #deb890;
+}
+a:active{
+    color: #deb;
+}
+a:link{
+    color: #deb890;
+}
+
 .keys{
     display: flex;
     flex-direction: column;

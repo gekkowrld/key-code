@@ -45,6 +45,17 @@ main p{
     align-items: center;
     border-radius: 12px;
 }
+a{
+    color: #deb890;
+    font-size: 21px;
+    text-decoration: none;
+}
+a:active{
+    color: #deb;
+}
+a:link{
+    color: #deb890;
+}
 .key-name{
     width: 95px;
     height: 45px;

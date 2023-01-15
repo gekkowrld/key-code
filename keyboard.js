@@ -1,5 +1,4 @@
 const theAlphaNormKeys = Array.from(document.querySelectorAll('.norm-key, .space-bar'));
-const inputTextArea = document.querySelector('#input-text-area')
 const theShiftKeys = Array.from(document.querySelectorAll('.shift'));
 const offShiftKeys = Array.from(document.querySelectorAll('.off'));
 const onShiftKeys = Array.from(document.querySelectorAll('.on'));
@@ -11,8 +10,4 @@ theShiftKeys.forEach(theShiftKey => theShiftKey.addEventListener('click', () =>{
     offShiftKeys.forEach(offShiftKey => offShiftKey.classList.toggle('hidden-content'));
 }));
 
-theAlphaNormKeys.forEach(theAlphaNormKey => theAlphaNormKey.addEventListener('click', () => {
-    for(let i = 10; i > 0; i--){
-        inputTextArea.innerText = theAlphaNormKey.innerText;
-    }
-}));
+
