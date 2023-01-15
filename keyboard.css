@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --text-color: #fff;
+    --text-background-color: #aaa;
+    --keyboard-container-color: #000;
+    --special-text-color-background-color: #bba1d1;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #deb890;
+}
+a:active{
+    color: #deb;
+}
+a:link{
+    color: #deb890;
+}
+
+.keys{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    justify-content: center;
+    align-items: center;
+}
+[class^='row']{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.row4{
+    width: 100%;
+    gap: 10px;
+}
+.space-bar{
+    width: 60%;
+    background: var(--special-text-color-background-color);
+    height: 40px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.del{
+    color: var(--text-color);
+    background: var(--special-text-color-background-color);
+    height: 20px;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    border-radius: 12px;
+}
+.enter{
+    color: var(--text-color);
+    background: var(--special-text-color-background-color);
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 12px;
+    height: 20px;
+}
+.shift{
+    color: var(--text-color);
+    background: var(--special-text-color-background-color);
+    width: 35px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#keyboard-container{
+    background: var(--keyboard-container-color);
+    width: 700px;
+    height: 300px;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.norm-key{
+    height: 20px;
+    width: 20px;
+    color: var(--text-color);
+    background: var(--text-background-color);
+    margin: 5px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.hidden-content{
+    display: none;
+    visibility: hidden;
+}
